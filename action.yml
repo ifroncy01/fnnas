@@ -1,5 +1,5 @@
 name: "Make Fnnas"
-author: "https://github.com/ophub/fnnas"
+author: "https://github.com/ifroncy01/fnnas"
 description: "Support Amlogic, Rockchip and Allwinner boxes."
 inputs:
   # Select build target
