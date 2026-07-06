@@ -442,7 +442,7 @@ jobs:
 
           # Create directory symlinks for packaging
           ln -sf /builder/fnnas ${{ github.workspace }}/fnnas
-          ln -sf /builder/fnnas /home/runner/work/_actions/ophub/fnnas/main/fnnas
+          ln -sf /builder/fnnas /home/runner/work/_actions/ifroncy01/fnnas/fnnas-build-easepi/fnnas
 
           echo "build_tag=${build_tag}" >> ${GITHUB_ENV}
           echo "status=success" >> ${GITHUB_OUTPUT}
@@ -460,7 +460,7 @@ jobs:
           builder_name: ${{ inputs.builder_name }}
 
       - name: Upload packaged FnNAS to Release
-        uses: ophub/upload-to-releases@main
+        uses: ifroncy01/upload-to-releases@fnnas-build-easepi
         if: ${{ env.PACKAGED_STATUS == 'success' && !cancelled() }}
         with:
           tag: ${{ env.build_tag }}

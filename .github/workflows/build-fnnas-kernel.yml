@@ -173,7 +173,7 @@ jobs:
           [[ "${?}" -ne "0" ]] && echo "Error: Download failed." && exit 1
 
           ln -sf /builder/fnnas ${{ github.workspace }}/fnnas
-          ln -sf /builder/fnnas /home/runner/work/_actions/ophub/fnnas/main/fnnas
+          ln -sf /builder/fnnas /home/runner/work/_actions/ifroncy01/fnnas/fnnas-build-easepi/fnnas
 
           echo "status=success" >> ${GITHUB_OUTPUT}
 
@@ -189,7 +189,7 @@ jobs:
           dtbs_install: ${{ inputs.dtbs_install }}
 
       - name: Upload Kernel to Release
-        uses: ophub/upload-to-releases@main
+        uses: ifroncy01/upload-to-releases@fnnas-build-easepi
         if: ${{ env.PACKAGED_STATUS == 'success' && !cancelled() }}
         with:
           tag: kernel_fnnas
