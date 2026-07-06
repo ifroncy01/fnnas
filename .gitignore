@@ -1,6 +1,13 @@
 !.gitignore
 /make-fnnas/kernel
 /make-fnnas/u-boot
+!/make-fnnas/u-boot/rockchip/easepi-a2
+!/make-fnnas/u-boot/rockchip/easepi-r2
+/make-fnnas/fnnas-files/different-files
+!/make-fnnas/fnnas-files/different-files/easepi-a2
+!/make-fnnas/fnnas-files/different-files/easepi-r2
+/make-fnnas/fnnas-files/platform-files
+!/make-fnnas/fnnas-files/platform-files/rockchip
 /fnnas
 /fnnas-arm64
 /fnnas-debs
