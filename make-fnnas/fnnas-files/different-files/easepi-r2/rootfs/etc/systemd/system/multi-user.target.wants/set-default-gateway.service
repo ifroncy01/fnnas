@@ -1,1 +1,1 @@
-/etc/systemd/system/set-default-gateway.service
+../set-default-gateway.service
